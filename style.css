@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  font-family: 'Poppins', sans-serif;
+  background: #607EAA;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  width: 380px;
+  background-color: white;
+  border-radius: 15px;
+}
+
+.container div>p {
+  font-weight: bold;
+}
+
+.container .input-container {
+  width: 100%;
+  padding-top: 20px;
+}
+
+.input-container input {
+  font-size: 16px;
+  width: 100%;
+  padding: 10px;
+  outline: none;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.input-container .currency {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+  padding: 5px;
+}
+
+.currency div .currency-select {
+  display: flex;
+  position: relative;
+}
+
+.currency .swap {
+  position: absolute;
+  top: 48%;
+  left: 48%;
+  font-size: 18px;
+  color: #607EAA;
+}
+
+.currency .swap i:hover {
+  opacity: 0.8;
+}
+
+.currency .swap i:active {
+  transform: scale(0.95);
+}
+
+.currency-select img {
+  position: absolute;
+  bottom: 8px;
+  left: 10px;
+  height: 20px;
+  width: 40px;
+}
+
+.currency-select select {
+  width: 140px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 8px 8px 8px 30px;
+  font-weight: bold;
+  text-align: center;
+  outline: none;
+}
+
+.currency-select select::-webkit-scrollbar {
+  width: 8px;
+}
+
+.currency-select select::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+.currency-select select::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 8px;
+  border-right: 2px solid #ffffff;
+}
+
+.currency-select select option {
+  border: none;
+  width: 20px;
+}
+
+.input-container .exchange-rate {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+  width: 100%;
+  padding: 5px;
+  color: #607EAA;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #607EAA;
+}
+
+.container .convert {
+  background-color: #607EAA;
+  color: white;
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background ease 1s;
+}
+
+.convert:hover {
+  background-color: white;
+  outline: 2px solid #607EAA;
+  color: #607EAA;
+}
+
+.convert:active {
+  transform: scale(0.95);
+}

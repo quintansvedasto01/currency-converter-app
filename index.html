@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Currency Converter</title>
+  <!-- Font Awesome (Icons) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="container">
+    <h2>Currency Converter</h2>
+    <div class="input-container">
+      <p>Enter Amount:</p>
+      <input type="number" name="amount" id="amount" placeholder="Enter Amount" required>
+      <div class="currency">
+        <div class="from-currency">
+          <p>From:</p>
+          <div class="currency-select">
+            <img src="https://countryflagsapi.com/png/us" alt="The United States Of America flag" class="flag-1 flag" />
+            <select>
+              <!-- <option value="USD">USD</option>
+              <option value="PHP">PHP</option>
+              <option value="JPY">JPY</option>
+              <option value="THB">THB</option>
+              <option value="SKW">SKW</option> -->
+            </select>
+          </div>
+        </div>
+        <div class="swap">
+          <i class="fa-solid fa-arrow-right-arrow-left"></i>
+        </div>
+        <div class="to-currency">
+          <p>To:</p>
+          <div class="currency-select">
+            <img src="https://countryflagsapi.com/png/ph" alt="Philippines flag" class="flag-2 flag" />
+            <select>
+              <!-- <option value="PHP">PHP</option>
+              <option value=" USD">USD</option>
+              <option value="JPY">JPY</option>
+              <option value="THB">THB</option>
+              <option value="SKW">SKW</option> -->
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="exchange-rate">
+        1 USD = 55.86 PHP
+      </div>
+    </div>
+    <button class="convert">Convert</button>
+  </div>
+
+  <!-- jQuery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="js/main.js"></script>
+  <script src="js/country-list.js"></script>
+  <script src="js/exchange-rate-api.js"></script>
+</body>
+
+</html>
