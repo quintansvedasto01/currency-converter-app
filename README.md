@@ -19,7 +19,7 @@ It works just like most existing currency converter.
 Just run it in your browser and make sure that you have internet connection because it is APIs dependent.
 
 ## Disclaimer
-The design is originally made by me, but the logic behind it are base from "YT:CodingNepal". Sorry for my bad english :)
+The design is originally made by me, but the logic behind it is base from "YT:CodingNepal". Sorry for my bad english :)
 
 ```
 Give example code
